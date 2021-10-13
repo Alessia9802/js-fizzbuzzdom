@@ -1,4 +1,5 @@
 .container {
+  width: 1200px;
   margin: auto;
   text-align: center;
 }
@@ -11,10 +12,23 @@
 }
 
 li.box {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
+  width: 150px;
+  height: 150px;
+  background-color: #3d88ae;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tre {
+  background-color: #61d2a4;
+}
+
+.cinque {
+  background-color: #f9d277;
+}
+
+.both {
+  background-color: #de5471;
 }

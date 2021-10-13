@@ -19,3 +19,16 @@ for (let i = 1; i <= 100; i++) {
 
   list.innerHTML += element;
 }
+
+const multipliDiTre = document.querySelector("li.box");
+console.log(multipliDiTre);
+
+const multipliDiCinque = document.querySelector("li.box");
+console.log(multipliDiCinque);
+
+const colori = document.querySelector("li.box");
+console.log(colori);
+
+if (multipliDiTre * 3) {
+  colori.className = "tre";
+}
