@@ -10,8 +10,9 @@ document.body.style.backgroundColor = "#183A4A";
 
 // Rappresentare un ciclo da 1 a 100
 
+const ul = document.querySelector("ul.list");
+
 for (let i = 1; i <= 100; i++) {
   console.log(i);
+  ul.innerHTML += i;
 }
-
-document.getElementsByClassName("numbers").value;
