@@ -1,17 +1,25 @@
+body {
+  background-color: #183a4a;
+}
+
+h1 {
+  color: white;
+}
+
 .container {
   width: 1200px;
   margin: auto;
   text-align: center;
 }
 
-.list {
+ul.list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-li.box {
+li {
   width: 150px;
   height: 150px;
   background-color: #3d88ae;

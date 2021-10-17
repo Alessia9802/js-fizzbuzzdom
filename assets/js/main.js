@@ -6,29 +6,27 @@ per i multipli di 3,
 per i multipli di 5 
 e per i valori che sono sia multipli di 3 che di 5. */
 
-document.body.style.backgroundColor = "#183A4A";
-document.getElementById("titolo").style.color = "white";
-
 // Rappresentare un ciclo da 1 a 100
 
-let list = document.querySelector(".list");
+const listElement = document.querySelector(".list");
 
 for (let i = 1; i <= 100; i++) {
-  console.log(i);
-  const element = `<li class="box"> ${i} </li>`;
+  let element;
+  if (i % 3 == 0 && i % 5 == 0) {
+    element = `<li class='both'>FizzBuzz</li>`;
 
-  list.innerHTML += element;
-}
+    console.log("fizzbuzz");
+  } else if (i % 3 == 0) {
+    element = `<li class='tre'>Fizz</li>`;
+    console.log("fizz");
+  } else if (i % 5 == 0) {
+    element = `<li class='cinque'>Buzz</li>`;
+    console.log("buzz");
+  } else {
+    element = `<li>${i} </li>`;
+    console.log(i);
+  }
 
-const multipliDiTre = document.querySelector("li.box");
-console.log(multipliDiTre);
-
-const multipliDiCinque = document.querySelector("li.box");
-console.log(multipliDiCinque);
-
-const colori = document.querySelector("li.box");
-console.log(colori);
-
-if (multipliDiTre * 3) {
-  colori.className = "tre";
+  console.log(element);
+  listElement.insertAdjacentHTML("beforeend", element);
 }
